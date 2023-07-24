@@ -1,0 +1,40 @@
+/* ===================================== 
+                Html, Body
+======================================== */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:black;
+}
+
+#home-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color:white;
+    font-size: 20px;
+}
+  
+#home-content-inner {
+    text-align: center;
+}
+
+#home-heading {
+    font-weight: bolder;
+}
+
+#home-heading-2 span {
+    font-style: italic;
+    font-weight: bold;
+    color:gold
+}
+
+#home-text span {
+    font-weight: bold;
+    font-style: italic;
+}
