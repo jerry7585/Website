@@ -11,6 +11,9 @@ body {
     background-color:black;
 }
 
+/* ===================================== 
+                Home Content
+======================================== */
 #home-content {
     display: flex;
     justify-content: center;
@@ -37,4 +40,26 @@ body {
 #home-text span {
     font-weight: bold;
     font-style: italic;
+}
+
+/* ===================================== 
+        Logo, Video Background, Menu Bar
+======================================== */
+.logo {
+    position: absolute;
+    top: 10px; /* Adjust this value to position the logo vertically */
+    left: 10px; /* Adjust this value to position the logo horizontally */
+    width: 50px; /* Adjust the width of the logo */
+    height: auto; /* This allows the logo to scale proportionally */
+    z-index: 999; /* Set a high z-index to ensure the logo appears above other content */
+}
+
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Scale the video to cover the entire viewport */
+    z-index: -1; /* Place the video behind other elements */
 }
