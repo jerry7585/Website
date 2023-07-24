@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Important Meta Code, set for all websites -->  
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Title of Browser-->
+        <title>Jerry Su</title>
+
+        <!-- Adding favicon to browser icon-->
+        <link rel="browser icon" href="images/favicon/favicon.ico">
+
+        <!-- Adding Roboto Mono as the font-->
+        <!-- Also adding Raleway as a font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+        
+        <!-- Linking fonts.css-->
+        <link rel="stylesheet" href="css/fonts.css">
+
+        <!-- Linking style.css (main format for interface)-->
+        <link rel="stylesheet" href="css/style.css">
+
+        
+    </head>
+    
+<body>
+    <!-- Header logo and menu buttons on top-->
+    
+    <!-- Bar element -->
+    <div class="bar"></div>
+    
+    <!-- Logo -->
+    <img src="images\logo\logo.png" alt="" class="logo">
+
+     <!-- Main Menu -->
+     <div class="container">
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav pull-right">
+                <li><a class="smooth-scroll" href="#home">HOME</a></li>
+                <li><a class="smooth-scroll" href="#about">ABOUT</a></li>
+                <li><a class="smooth-scroll" href="#team">SKILLS</a></li>
+                <li><a class="smooth-scroll" href="#portfolio">WORK</a></li>
+                <li><a class="smooth-scroll" href="#interests">INTERESTS</a></li>
+                <li><a class="smooth-scroll" href="#services">SERVICES</a></li>
+                <li><a class="smooth-scroll" href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- Adding background video on loop -->
+    <video id="video-background" poster="video\homeVideoThumbnail.png" muted autoplay loop>
+        <source src="video\homeVideo.mp4" type="video/mp4">
+        <source src="video\homeVideo.ogv" type="video/ogv">
+        <source src="video\homeVideo.webm" type="video/webm">
+    </video>
+
+
+    <!-- Start of Home Content-->
+    <div id="home-content">
+        <div id="home-content-inner" class="text-center">
+
+            <div id="home-heading">
+                <h1 id="home-heading-1">HELLO,</h1>
+                <h1 id="home-heading-2">I AM <span>JERRY</span></h1>
+            </div>
+
+            <div id="home-text">
+                <p>By day, a <span>programmer</span>, a <span>developer</span>. By night, an <span>explorer</span>, a <span>designer</span>.</p>
+            </div>
+
+            <div id="home-btn">
+                <!-- btn class is button role is from bootstrap -->
+                <a class="btn btn-general btn-home smooth-scroll" href="#about" title="Start Now" role="button">Learn More</a>
+                <!-- anchor element: defines hyperlink -->
+            </div>
+
+        </div>
+
+        <!-- Arrow Down, from font awesome -->
+        <a href="#about" id="arrow-down" class="smooth-scroll">
+            <i class="fa fa-angle-down"></i>
+        </a>
+
+    </div>
+    <!-- End of Home Content-->
+
+</body>
+
+</html>
