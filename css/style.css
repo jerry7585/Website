@@ -7,13 +7,50 @@ html, body {
     padding: 0;
 }
 
-body {
-    background-color:black;
+/* ===================================== 
+        Fading in and out Method
+======================================== */
+/* Animation for home-heading-1 and home-heading-2 */
+@keyframes fadeInHeading {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Animation for home-text */
+@keyframes fadeInPlace {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+@keyframes fadeInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform:translateX(0);
+    }
 }
 
 /* ===================================== 
                 Home Content
 ======================================== */
+#home-heading-1, #home-heading-2, #home-text {
+    opacity: 0;
+    line-height: 1;
+}
+
 #home-content {
     display: flex;
     justify-content: center;
@@ -29,6 +66,20 @@ body {
 
 #home-heading {
     font-weight: bolder;
+    font-size: 35px;
+}
+
+#home-heading-1 {
+    animation: fadeInHeading 1s ease-in-out 0.75s forwards;
+}
+  
+#home-heading-2 {
+    animation: fadeInFromLeft 1s ease-in-out 1.5s forwards; 
+}
+  
+#home-text {
+    animation: fadeInPlace 1s ease-in-out 2.25s forwards;
+    font-size: 20px;
 }
 
 #home-heading-2 span {
@@ -62,4 +113,40 @@ body {
     height: 100%;
     object-fit: cover; /* Scale the video to cover the entire viewport */
     z-index: -1; /* Place the video behind other elements */
+}
+
+.bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; /* Adjust the height of the bar as needed */
+    background-color: #333; /* Set the background color of the bar */
+    z-index: 200; /* Set the z-index to ensure the bar appears above other content */
+}
+
+/* ===================================== 
+            Menu Buttons On Top
+======================================== */
+.container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: auto;
+    background-color: transparent; /* Optional: Set the background color of the menu container */
+    align-items: center;
+    padding: 5px;
+    z-index: 300; /* Optional: Adjust the z-index to ensure the menu appears above other content */
+}
+
+.navbar-nav li {
+    margin-right: 10px;
+    display: inline-block; /* Add this line to make the items appear horizontally */
+}
+
+.navbar-nav li a {
+    color: white; /* Set the color of the link text */
+    font-size: 14px; /* Adjust the font size of the link text */
+    text-decoration: none; /* Remove underline from links */
+    font-family: 'Raleway', sans-serif;
 }
