@@ -133,7 +133,7 @@ html, body {
     top: 0;
     right: 0;
     left: auto;
-    background-color: transparent; /* Optional: Set the background color of the menu container */
+    background-color: transparent; 
     align-items: center;
     padding: 5px;
     z-index: 300; /* Optional: Adjust the z-index to ensure the menu appears above other content */
@@ -155,7 +155,7 @@ html, body {
         Menu Buttons After Scroll
 ======================================== */
 .scrolled-bar {
-    background-color: white;
+    background-color: black;
 }
 .scrolled-navbar-nav li a {
     color: black; /* Set the color of the link text */
