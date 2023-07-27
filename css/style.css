@@ -22,7 +22,7 @@ html, body {
     }
   }
   
-  /* Animation for home-text */
+/* Animation for home-text and learn more button */
 @keyframes fadeInPlace {
     0% {
       opacity: 0;
@@ -46,7 +46,7 @@ html, body {
 /* ===================================== 
                 Home Content
 ======================================== */
-#home-heading-1, #home-heading-2, #home-text {
+#home-heading-1, #home-heading-2, #home-text, #learn-more-btn{
     opacity: 0;
     line-height: 1;
 }
@@ -64,22 +64,23 @@ html, body {
     text-align: center;
 }
 
-#home-heading {
-    font-weight: bolder;
-    font-size: 35px;
-}
 
 #home-heading-1 {
     animation: fadeInHeading 1s ease-in-out 0.75s forwards;
+    font-weight: bold;
+    font-size: 60px;
 }
   
 #home-heading-2 {
     animation: fadeInFromLeft 1s ease-in-out 1.5s forwards; 
+    font-weight: bold;
+    font-size: 60px;
 }
   
 #home-text {
     animation: fadeInPlace 1s ease-in-out 2.25s forwards;
     font-size: 20px;
+    font-weight: 400;
 }
 
 #home-heading-2 span {
@@ -91,6 +92,24 @@ html, body {
 #home-text span {
     font-weight: bold;
     font-style: italic;
+}
+
+#learn-more-btn a{
+    color:white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    animation: fadeInPlace 1s ease-in-out 3s forwards;
+}
+
+.learn-more-outline {
+    background-color: transparent; /* background color */
+    padding: 10px 40px; /* padding of button and border */
+    border: 2px solid white; 
+    display: inline-block; 
+    color: white; 
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    animation: fadeInPlace 1s ease-in-out 3s forwards;
 }
 
 /* ===================================== 
@@ -149,16 +168,19 @@ html, body {
     font-size: 18px; /* Adjust the font size of the link text */
     text-decoration: none; /* Remove underline from links */
     font-family: 'Raleway', sans-serif;
+    font-style: bold;
 }
 
 /* ===================================== 
         Menu Buttons After Scroll
 ======================================== */
 .scrolled-bar {
-    background-color: black;
+    background-color: white;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2); /* Add a box shadow */
 }
-.scrolled-navbar-nav li a {
-    color: black; /* Set the color of the link text */
+.navbar-nav.scrolled li a {
+    color: black;
+    font-style:bold;
 }
 
 /* ===================================== 
@@ -177,4 +199,39 @@ html, body {
     display: flex;
     align-items: center; 
 }
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
   
+.about-left {
+    display: flex;
+    align-items: center; /* Vertically center the .vertical-heading within .about-left */
+}
+  
+.vertical-heading {
+    text-transform: uppercase; 
+    display: flex;
+    flex-direction: column; /* Arrange the h6 and h1 elements in a column */
+    align-items: center;
+}
+
+.vertical-heading h6{
+    text-transform: uppercase; 
+    font-size:25px;
+    color:gold
+}
+
+.vertical-heading h1 {
+    text-transform: uppercase; 
+    font-size:35px;
+}
+
+.vertical-heading h1 span{
+    text-transform: uppercase; 
+    font-size:35px;
+    font-weight: bold;
+}
