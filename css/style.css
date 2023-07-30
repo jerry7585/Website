@@ -64,6 +64,9 @@ html, body {
     text-align: center;
 }
 
+#home-heading {
+    padding-bottom: 25px;
+}
 
 #home-heading-1 {
     animation: fadeInHeading 1s ease-in-out 0.75s forwards;
@@ -81,6 +84,7 @@ html, body {
     animation: fadeInPlace 1s ease-in-out 2.25s forwards;
     font-size: 20px;
     font-weight: 400;
+    padding-bottom: 20px;
 }
 
 #home-heading-2 span {
@@ -118,7 +122,7 @@ html, body {
 .logo {
     position: fixed;
     top: 10px; /* Adjust this value to position the logo vertically */
-    left: 10px; /* Adjust this value to position the logo horizontally */
+    left: 50px; /* Adjust this value to position the logo horizontally */
     width: 50px; /* Adjust the width of the logo */
     height: auto; /* This allows the logo to scale proportionally */
     z-index: 999; /* Set a high z-index to ensure the logo appears above other content */
