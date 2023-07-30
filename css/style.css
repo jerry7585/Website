@@ -184,7 +184,7 @@ html, body {
 }
 
 /* ===================================== 
-            About Me Section
+            About Me Section 1
 ======================================== */
 
 .about-section {
@@ -239,8 +239,59 @@ html, body {
     font-weight: bold;
 }
 
+/* ===================================== 
+            About Me Section 2
+======================================== */
+
 .about-section-2 {
     background-color: rgb(231, 234, 238);
     color: black;
     padding: 50px;
+}
+
+.about-item {
+    background-color: #fff;
+    padding: 50px 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-item i {
+    font-size: 35px;
+    margin: 0;
+}
+.about-item h3 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.about-item hr {
+    width: 150px;
+    height: 3px;
+    background-color: #328cc0;
+    margin-bottom: 30px;
+    border: none;
+}
+
+/* Hover State */
+.about-item:hover {
+    background-color: #328cc0;
+}
+
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover p{
+    color: #fff;
+}
+
+.about-item:hover hr {
+    background-color: #fff;
+}
+
+.about-item:hover i {
+    transform: translateY(-20px);
+}
+
+/* Icon fly up on hover */
+.about-item i {
+    transition: all 400ms ease-in-out;
 }
