@@ -238,3 +238,9 @@ html, body {
     font-size:35px;
     font-weight: bold;
 }
+
+.about-section-2 {
+    background-color: rgb(231, 234, 238);
+    color: black;
+    padding: 50px;
+}
