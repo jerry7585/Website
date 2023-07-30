@@ -211,7 +211,10 @@ html, body {
     display: flex;
     align-items: center; /* Vertically center the .vertical-heading within .about-left */
 }
-  
+
+.about-right {
+    font-family: 'Raleway', sans-serif;
+}
 .vertical-heading {
     text-transform: uppercase; 
     display: flex;
