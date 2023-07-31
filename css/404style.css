@@ -1,0 +1,53 @@
+    body,
+    html {
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .img {
+        background-image: url('images/404page/404background1.png');
+        height: 100%;
+        background-size: cover;
+        position: relative;
+        color: #000;
+        font-size: 35px;
+    }
+
+    .topleft {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        font-size: 35px;
+    }
+
+    .middle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+        margin-top: 15%;
+    }
+
+    .middle h1 {
+        margin: 0;
+    }
+
+    a {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 70%);
+        color: white;
+        border-radius: 40px;
+        padding: 8px 25px;
+        transition: all 400ms linear;
+        font-weight: bold;
+    }
+
+    a:hover {
+        color: #fff;
+        background-color: #f4c613;
+    }
