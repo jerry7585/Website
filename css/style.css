@@ -334,6 +334,10 @@ html, body {
     font-weight: bold;
 }
 
+#skills .description {
+    padding: 10px;
+}
+
 .prev-btn,
 .next-btn {
     background-color: transparent;
@@ -357,17 +361,26 @@ html, body {
 }
   
 .icon-container {
-    display: flex; /* Use Flexbox */
-    flex-wrap: wrap; /* Allow icons to wrap to the next line when there is not enough space */
-    justify-content: space-between; /* Distribute icons evenly along the row */
-    align-items: flex-start; /* Align icons to the top of their container */
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    font-family: 'Raleway', sans-serif;
 }
   
 .icon {
     width: 20%; 
-    padding: 20px;
-    margin-bottom: 20px; 
+    padding: 40px;
     text-align: center; 
+}
+
+.icon:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.icon .label{
+    font-size: 32px;
+    color:black
 }
 
 .icon-container .icon i {
@@ -379,20 +392,39 @@ html, body {
     color: #555;
 }
 
-/* Style for the progress bar container */
 .progress-bar {
     width: 100%;
     height: 10px;
-    background-color: gray; /* Change this to the desired background color */
+    background-color: gray; 
     border-radius: 5px;
-  }
+    position: relative;
+    margin-top: 10px;
+}
   
-  /* Style for the progress bar itself */
-  .progress {
+.progress {
     height: 100%;
+    border-radius: 8px;
+    background-color: #007bff; 
+}
+
+.progress-tooltip {
+    position: absolute;
+    bottom: -34px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
     border-radius: 5px;
-    background-color: #007bff; /* Change this to the desired progress bar color */
-  }
+    font-size: 14px;
+    display: none;
+}
+
+
+
+
+
+
 
 
 /* ===================================== 
