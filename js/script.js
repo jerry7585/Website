@@ -64,3 +64,32 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+/*
+    Code for hovering and displaying description on SKILLS section
+*/
+document.addEventListener('DOMContentLoaded', function() {
+  const icons = document.querySelectorAll('.icon');
+
+  // Loop through all icons
+  icons.forEach(function(icon) {
+    // Find the description element within the icon
+    const description = icon.querySelector('.description');
+
+    // Hide the description and progress bar by default
+    description.style.display = 'none';
+
+    // Add event listeners for mouseover and mouseout
+    icon.addEventListener('mouseover', function() {
+      description.style.display = 'block';
+
+      // Add the percentage to the progress bar
+      const progress = description.querySelector('.progress');
+      progress.style.width = '80%'; // Change '80%' to the desired percentage value
+    });
+
+    icon.addEventListener('mouseout', function() {
+      description.style.display = 'none';
+    });
+  });
+});

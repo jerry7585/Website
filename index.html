@@ -22,6 +22,9 @@
         <!-- Link to Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
+        <!-- Link to jQuery using CDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
         <!-- Link to Bootstrap JS (jQuery required) -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -36,7 +39,14 @@
         <!-- Linking fonts.css-->
         <link rel="stylesheet" href="css/fonts.css">
 
-        <!-- Linking style.css (main format for interface)-->
+        <!-- Linking mdi font library-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css">
+
+        <!-- Owl-Carousel CSS -->
+        <link rel="stylesheet" href="css/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl-carousel/owl.theme.default.min.css">
+
+        <!-- Linking custom css style-->
         <link rel="stylesheet" href="css/style.css">
         
     </head>
@@ -56,10 +66,9 @@
             <ul class="nav navbar-nav pull-right">
                 <li><a class="smooth-scroll" href="#home-content">HOME</a></li>
                 <li><a class="smooth-scroll" href="#about">ABOUT</a></li>
-                <li><a class="smooth-scroll" href="#team">SKILLS</a></li>
+                <li><a class="smooth-scroll" href="#skills">SKILLS</a></li>
                 <li><a class="smooth-scroll" href="#portfolio">WORK</a></li>
                 <li><a class="smooth-scroll" href="#interests">INTERESTS</a></li>
-                <li><a class="smooth-scroll" href="#services">SERVICES</a></li>
                 <li><a class="smooth-scroll" href="#contact">CONTACT</a></li>
                 <li><a href="404.html">ERROR PAGE</a></li>
             </ul>
@@ -84,7 +93,7 @@
             </div>
 
             <div id="home-text">
-                <p>Creating solutions as a<span> Software Engineer, </span> an <span>Innovator</span>. Enjoying life as an <span> explorer</span>.</p>
+                <p>Creating solutions as a<span> Software Engineer, </span> an <span>Innovator</span>. Enjoying life as an <span> explorer</span>, a <span>cook</span>.</p>
             </div>
 
             <div id="learn-more-btn" class="learn-more-outline">
@@ -93,7 +102,7 @@
 
         </div>
 
-        <!-- Arrow Down, from font awesome -->
+        <!-- font awesome down arrow to about section -->
         <a href="#about" id="arrow-down" class="smooth-scroll">
             <i class="fa fa-angle-down"></i>
         </a>
@@ -122,7 +131,7 @@
                             <div id="about-right">
                                 <p>I am currently a Software Engineer at General Motors and am the only one on my team with working on software. I push everyday to leverage my knowledge as much as I can to help my team and make their jobs easier. I believe this is an amazing learning opportunity for me!</p>
                                 <p>I am a graduate from Stony Brook University with a Bachelor's Degree in Computer Engineering. </p>
-                                <p>My biggests interests lie in the Full-Stack Development. To broaden my knowledge, I would like to dive deeper into the Front-End because it is a completely new territory for me. This website is my first ever project doing anything front-end related!
+                                <p>My biggests interests lie in Full-Stack Development. To broaden my knowledge, I would like to dive deeper into the Front-End because it is a completely new territory for me. This website is my first ever project doing anything front-end related!
                             </div>
                         </div>
     
@@ -176,18 +185,83 @@
             </div>
         </div>
         <!-- About 02 Ends -->
-
     </section>
     <!-- End of About Me -->
+
+    <!-- Start of skills section-->
+    <section id="skills">
+        <div class="container">
+            <h2>SKILLS</h2>
+            <p>The following shows my <span>skill and proficiency</span> levels I've established with continous practice. I've <span>strengthened</span> my grasp over many programming languages such as HTML, CSS, JavaScript, Python,
+                Java, C/C++ and Assembly. <span>My next steps</span> are trying to leverage Python for Machine Learning.</p>
+            <div class="row">
+
+                <div class="icon-container owl-carousel owl-theme">
+                    <!-- Add your icons here -->
+                    <div class="icon">
+                        <div class="label">Git</div>
+                            <i class="fa-solid fa-code-merge"></i> 
+                            <div class="description">Proficient in using Git to collaborate on projects.
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    <div class="icon">
+                        <i class="fas fa-laptop"></i> 
+                        <div class="label">Web Development</div>
+                        <div class="description">Experienced in building responsive websites.</div>
+                    </div>
+                    
+                    <div class="icon">
+                        <i class="fas fa-laptop"></i> 
+                        <div class="label">Web Development</div>
+                        <div class="description">Experienced in building responsive websites.</div>
+                    </div>
+                    
+                    <div class="icon">
+                        <i class="fas fa-laptop"></i> 
+                        <div class="label">Web Development</div>
+                        <div class="description">Experienced in building responsive websites.</div>
+                    </div>
+
+                    <div class="icon">
+                        <i class="fas fa-laptop"></i> 
+                        <div class="label">Web Development</div>
+                        <div class="description">Experienced in building responsive websites.</div>
+                    </div>
+            
+                    <div class="icon">
+                        <i class="fas fa-laptop"></i> 
+                        <div class="label">Web Development</div>
+                        <div class="description">Experienced in building responsive websites.</div>
+                    </div>
+                        <!-- End of all icons in skills section-->
+                </div>
+
+                <div class="slider-navigation">
+                    <button class="prev-btn"><i class="fa fa-chevron-left"></i></button>
+                    <button class="next-btn"><i class="fa fa-chevron-right"></i></button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
 
     <!-- Link to main JS script file -->
     <script src="js/script.js"></script>
 
-    <!-- Link to jquery JS file-->
-    <script src="js\jQuery\jquery.min.js"></script>
-
     <!-- Link to wow.js JS file-->
     <script src="js\wow\wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <!-- Link to owl carousel JS file -->
+    <script src="js\owl-carousel\owl.carousel.js"></script>
 
     <!-- Link to bootstrap JS file-->
     <script src="js\Bootstrap\bootstrap.min.js"></script>

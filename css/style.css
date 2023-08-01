@@ -46,7 +46,7 @@ html, body {
 /* ===================================== 
                 Home Content
 ======================================== */
-#home-heading-1, #home-heading-2, #home-text, #learn-more-btn{
+#home-heading-1, #home-heading-2, #home-text, #learn-more-btn, #arrow-down{
     opacity: 0;
     line-height: 1;
 }
@@ -78,6 +78,10 @@ html, body {
     animation: fadeInFromLeft 1s ease-in-out 1.5s forwards; 
     font-weight: bold;
     font-size: 60px;
+}
+
+#arrow-down {
+    animation: fadeInFromLeft 1s ease-in-out 1.5s forwards; 
 }
   
 #home-text {
@@ -116,6 +120,9 @@ html, body {
     animation: fadeInPlace 1s ease-in-out 3s forwards;
 }
 
+#arrow-down {
+    color:#fff;
+}
 /* ===================================== 
     Logo, Video Background, Menu Bar
 ======================================== */
@@ -219,6 +226,7 @@ html, body {
 .about-right {
     font-family: 'Raleway', sans-serif;
 }
+
 .vertical-heading {
     text-transform: uppercase; 
     display: flex;
@@ -299,3 +307,111 @@ html, body {
 .about-item i {
     transition: all 400ms ease-in-out;
 }
+
+/* ===================================== 
+            Skills section
+======================================== */
+#skills {
+    background-color: rgb(255, 255, 255);
+    padding: 50px 0;
+    text-align: center;
+}
+  
+#skills h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color:#328cc0;
+}
+
+#skills p {
+    font-size: 17px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#skills span {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.prev-btn,
+.next-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+  
+.prev-btn:hover,
+.next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+  
+.prev-btn {
+    margin-right: 15px;
+}
+  
+.next-btn {
+    margin-left: 15px;
+}
+  
+.icon-container {
+    display: flex; /* Use Flexbox */
+    flex-wrap: wrap; /* Allow icons to wrap to the next line when there is not enough space */
+    justify-content: space-between; /* Distribute icons evenly along the row */
+    align-items: flex-start; /* Align icons to the top of their container */
+}
+  
+.icon {
+    width: 20%; 
+    padding: 20px;
+    margin-bottom: 20px; 
+    text-align: center; 
+}
+
+.icon-container .icon i {
+    font-size: 40px; 
+}
+
+.icon-container .icon .description {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Style for the progress bar container */
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: gray; /* Change this to the desired background color */
+    border-radius: 5px;
+  }
+  
+  /* Style for the progress bar itself */
+  .progress {
+    height: 100%;
+    border-radius: 5px;
+    background-color: #007bff; /* Change this to the desired progress bar color */
+  }
+
+
+/* ===================================== 
+            Owl-Carousel
+======================================== */
+.owl-theme .owl-nav [class*=owl-] {
+    color: #212226;
+    font-size: 40px;
+    background: none;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: none;
+    color: #212226;
+}
+  
+.slider-navigation {
+    margin-top: 20px;
+}
+  
+  
+  
