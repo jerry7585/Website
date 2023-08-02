@@ -22,13 +22,6 @@
         <!-- Link to Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-        <!-- Link to jQuery using CDN -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-        <!-- Link to Bootstrap JS (jQuery required) -->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
         <!-- Link to Animate.css from https://animate.style/-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
@@ -57,8 +50,11 @@
     <!-- Bar element -->
     <div class="bar"></div>
     
-    <!-- Logo -->
-    <img src="images\logo\logo.png" alt="" class="logo">
+    <!-- Logo --> 
+    <a  class="smooth-scroll" href="#home-content" >
+        <img src="images/logo/logo.png" alt="" class="logo">
+        <span class="logo-text">Jerry's Portfolio</span>
+    </a>
 
      <!-- Main Menu list element all hyperlinks -->
      <div class="menubar">
@@ -192,52 +188,123 @@
     <section id="skills">
         <div class="container">
             <h2>SKILLS</h2>
-            <p>The following shows my <span>skill and proficiency</span> levels that I've established with continous practice. I've <span>strengthened</span> my grasp over many programming languages such as HTML, CSS, JavaScript, Python,
-                Java, C/C++ and Assembly. <span>My next steps</span> are trying to leverage Python for Machine Learning.</p>
+            <p>The following shows my <span>skill and proficiency</span> levels that I've established with continous practice. I've <span>strengthened</span> my grasp over many programming languages such as Java, C/C++, HTML, CSS, JavaScript, Python, and Assembly. <span>My next steps</span> are trying to leverage Python for Machine Learning.</p>
             <div class="row">
-
-                <div class="icon-container">
+    
+                <div class="icon-container owl-carousel owl-theme">
                     <!-- Add your icons here -->
+    
                     <div class="icon">
-                        <div class="label">Git</div>
-                        <i class="fa-solid fa-code-merge"></i> 
-                        <div class="description" data-progress="87">
-                            Proficient in using Git to collaborate on projects. 
-                            <div class="progress-bar">
-                                <div class="progress progress-fill"></div>
-                                <div class="progress-tooltip">87%</div> 
-                            </div>
-                        </div>
+                        <div class="label">JAVA</div>
+                        <img src="images/skill_Icons/Java_Programming.png" alt="Java Icon"> 
                     </div>
 
-                        <!-- End of all icons in skills section-->
-                </div>
+                    <div class="icon">
+                        <div class="label">C++</div>
+                        <img src="images/skill_Icons/CPP_Programming.png" alt="C++ Icon"> 
+                    </div>
 
+                    <div class="icon">
+                        <div class="label">C</div>
+                        <img src="images/skill_Icons/C_Programming.png" alt="C Icon"> 
+                    </div>
+
+                    <div class="icon">
+                        <div class="label">PYTHON</div>
+                        <img src="images/skill_Icons/Python.png" alt="Python Icon"> 
+                    </div>
+
+                    <div class="icon">
+                        <div class="label">JAVASCRIPT</div>
+                        <img src="images/skill_Icons/Javascript.png" alt="JS Icon"> 
+                    </div>
+    
+                    <div class="icon">
+                        <div class="label">CSS</div>
+                        <img src="images/skill_Icons/css.png" alt="CSS Icon">  
+                    </div>
+
+                    <div class="icon">
+                        <div class="label">HTML</div>
+                        <img src="images/skill_Icons/HTML.png" alt="HTML Icon">  
+                    </div>
+
+                    <div class="icon">
+                        <div class="label">REACT</div>
+                        <img src="images/skill_Icons/react.png" alt="React Icon">  
+                    </div>
+
+                    <div class="icon">
+                        <div class="label">BOOTSTRAP</div>
+                        <img src="images/skill_Icons/bootstrap.png" alt="Bootstrap Icon">  
+                    </div>
+
+                    <div class="icon">
+                        <div class="label">SELENIUM</div>
+                        <img src="images/skill_Icons/selenium.png" alt="Selenium Icon">  
+                    </div>
+
+                    <div class="icon">
+                        <div class="label">ASSEMBLY</div>
+                        <img src="images/skill_Icons/assembly.png" alt="Assembly Icon">  
+                    </div>
+                    
+                    <div class="icon">
+                        <div class="label">Git</div>
+                        <img src="images/skill_Icons/git.png" alt="Git Icon">  
+                    </div>
+
+                    <div class="icon">
+                        <div class="label">EXCEL</div>
+                        <img src="images/skill_Icons/excel.png" alt="Excel Icon">  
+                    </div>
+
+                    <div class="icon">
+                        <div class="label">ASSEMBLY</div>
+                        <img src="images/skill_Icons/assembly.png" alt="Assembly Icon">  
+                    </div>
+
+
+                    <!-- Add more icons here -->
+    
+                </div>
+    
                 <div class="slider-navigation">
                     <button class="prev-btn"><i class="fa fa-chevron-left"></i></button>
                     <button class="next-btn"><i class="fa fa-chevron-right"></i></button>
                 </div>
+    
+                <!-- End of all icons in skills section -->
+    
+            </div>
 
+            <div>
+                <p>Java</p>
             </div>
         </div>
     </section>
 
-
-
-    <!-- Link to main JS script file -->
-    <script src="js/script.js"></script>
+    
 
     <!-- Link to wow.js JS file-->
     <script src="js\wow\wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
+    <script> new WOW().init(); </script>
+
+    <!-- Link to jQuery using CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Link to Bootstrap JS (jQuery required) -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <!-- Link to owl carousel JS file -->
-    <script src="js\owl-carousel\owl.carousel.js"></script>
+    <script src="js\owl-carousel\owl.carousel.min.js"></script>
 
     <!-- Link to bootstrap JS file-->
     <script src="js\Bootstrap\bootstrap.min.js"></script>
+
+    <!-- Link to main JS script file -->
+    <!-- keep this at the end so all other libraries are initialized first-->
+    <script src="js/script.js"></script>
 
 </body>
 

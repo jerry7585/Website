@@ -1,23 +1,26 @@
 /*
     Code to make bar at top static and change colors
 */
-
 document.addEventListener('DOMContentLoaded', function() {
   var navbarLinks = document.querySelectorAll('.navbar-nav li a');
   var bar = document.querySelector('.bar');
+  var logoText = document.querySelector('.logo-text');
 
   window.addEventListener('scroll', function() {
     if (window.scrollY > 0) {
       document.querySelector('.navbar-nav').classList.add('scrolled');
       bar.classList.add('scrolled-bar');
+      logoText.classList.add('scrolled'); 
       console.log('Navigation bar: JS working!');
     } else {
       document.querySelector('.navbar-nav').classList.remove('scrolled');
       bar.classList.remove('scrolled-bar');
+      logoText.classList.remove('scrolled'); 
       console.log('Navigation bar: JS NOT working!');
     }
   });
 });
+
 
 
 /*
@@ -92,5 +95,41 @@ document.addEventListener('DOMContentLoaded', function() {
 
       // Update the tooltip text with the percentage value
       progressTooltip.innerText = percentage + '%';
+  });
+});
+
+/*
+    Initialize the owl carousel
+*/
+document.addEventListener('DOMContentLoaded', function() {
+  // Get all the icon elements
+  const icons = document.querySelectorAll('.icon');
+
+  // Calculate the number of items to show in the carousel, capped at a maximum of 5
+  const itemsToShow = Math.min(icons.length, 5);
+
+  // Initialize the Owl Carousel with the calculated number of items
+  $('.icon-container').owlCarousel({
+      loop: true, 
+      margin: 70, 
+      nav: false, // Show default next prev buttons
+      responsive: {
+          0: {
+              items: 1 // Show one item on small screens
+          },
+          600: {
+              items: Math.min(itemsToShow, 3) // Show at most 3 items on screens larger than 600px
+          },
+          1000: {
+              items: itemsToShow // Show the calculated number of items on screens larger than 1000px
+          }
+      }
+  });
+  $('.next-btn').click(function() {
+    $('.icon-container').trigger('next.owl.carousel');
+  });
+
+  $('.prev-btn').click(function() {
+    $('.icon-container').trigger('prev.owl.carousel');
   });
 });
