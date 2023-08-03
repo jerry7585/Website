@@ -422,6 +422,42 @@ html, body {
     height: auto !important; 
 }
 
+.skill h4 {
+    line-height: 40px;
+}
+
+.progress {
+    height: 25px;
+    border-radius: 0;
+    background: #efefef;
+    overflow: visible;
+}
+
+.progress-bar {
+    background-color: #328cc0;
+    position: relative;
+}
+
+.progress-bar span {
+    font-size: 15px;
+    font-family: "Ralewayu", sans-serif;
+    background: black;
+    padding: 5px;
+    position: absolute;
+    left: 97%;
+    top: -40px;
+}
+
+.progress-bar span:before {
+    content: "";
+    border-top: 8px solid #212226;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    position: absolute;
+    bottom: -7px;
+    left: 20%;
+}
+
 /* ===================================== 
             Owl-Carousel
 ======================================== */

@@ -1,4 +1,3 @@
-
 /*
     Code to make bar at top static and change colors
 */
@@ -67,35 +66,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-/*
-    Code for hovering and displaying description on SKILLS section
-*/
-document.addEventListener('DOMContentLoaded', function() {
-  const icons = document.querySelectorAll('.icon');
-
-  icons.forEach(function(icon) {
-      //const description = icon.querySelector('.description');
-      const progressBar = icon.querySelector('.progress-fill');
-      const progressTooltip = icon.querySelector('.progress-tooltip'); // Get the tooltip element
-      //const percentage = parseInt(description.dataset.progress);
-
-      //description.style.display = 'none';
-
-      icon.addEventListener('mouseover', function() {
-          //description.style.display = 'block';
-          progressBar.style.width = percentage + '%';
-          progressTooltip.style.display = 'block'; // Show the tooltip on mouseover
-      });
-
-      icon.addEventListener('mouseout', function() {
-          //description.style.display = 'none';
-          progressTooltip.style.display = 'none'; // Hide the tooltip on mouseout
-      });
-
-      // Update the tooltip text with the percentage value
-      //progressTooltip.innerText = percentage + '%';
-  });
-});
 
 /*
     Initialize the owl carousel
