@@ -43,6 +43,15 @@ html, body {
     }
 }
 
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
 /* ===================================== 
                 Home Content
 ======================================== */
@@ -242,6 +251,7 @@ html, body {
 .about-left {
     display: flex;
     align-items: center; /* Vertically center the .vertical-heading within .about-left */
+    animation: fadeInFromLeft 1s ease-in-out forwards;
 }
 
 .about-right {
