@@ -5,17 +5,20 @@ document.addEventListener('DOMContentLoaded', function() {
   var navbarLinks = document.querySelectorAll('.navbar-nav li a');
   var bar = document.querySelector('.bar');
   var logoText = document.querySelector('.logo-text');
+  var footer = document.querySelector('#return-top')
 
   window.addEventListener('scroll', function() {
     if (window.scrollY > 0) {
       document.querySelector('.navbar-nav').classList.add('scrolled');
       bar.classList.add('scrolled-bar');
       logoText.classList.add('scrolled'); 
+      footer.classList.add('scrolled');
       console.log('Navigation bar: JS working!');
     } else {
       document.querySelector('.navbar-nav').classList.remove('scrolled');
       bar.classList.remove('scrolled-bar');
       logoText.classList.remove('scrolled'); 
+      footer.classList.remove('scrolled');
       console.log('Navigation bar: JS NOT working!');
     }
   });
@@ -71,23 +74,20 @@ document.addEventListener('DOMContentLoaded', function() {
     Initialize the owl carousel
 */
 document.addEventListener('DOMContentLoaded', function() {
-  // Get all the icon elements
+  //Get all the icon elements
   const icons = document.querySelectorAll('.icon');
 
-  // Calculate the number of items to show in the carousel, capped at a maximum of 5
+  //Set carousel to show up to a max of 5 only
   const itemsToShow = Math.min(icons.length, 5);
 
-  // Initialize the Owl Carousel with the calculated number of items
+  //Initialize owl carousel
   $('.icon-container').owlCarousel({
       loop: true, 
       margin: 70, 
-      nav: false, // Show default next prev buttons
+      nav: false, // doesnt show next and prev buttons
       responsive: {
           0: {
               items: 1 // Show one item on small screens
-          },
-          600: {
-              items: Math.min(itemsToShow, 3) // Show at most 3 items on screens larger than 600px
           },
           1000: {
               items: itemsToShow // Show the calculated number of items on screens larger than 1000px
@@ -102,3 +102,8 @@ document.addEventListener('DOMContentLoaded', function() {
     $('.icon-container').trigger('prev.owl.carousel');
   });
 });
+
+
+/*
+    Code for the 
+*/
