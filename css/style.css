@@ -480,6 +480,38 @@ html, body {
 .slider-navigation {
     margin-top: 20px;
 }
-  
-  
-  
+
+/*
+        Footer
+*/
+footer {
+    background-color: rgb(88, 84, 84);
+    color: white;
+    padding: 30px;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+
+footer span {
+    color:gold;
+    font-style: italic;
+}
+footer p {
+    margin-bottom: 0; 
+}
+
+footer span {
+    font-weight: bold;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 999;
+    font-size: 22px;
+    color: white;
+    background-color: #328cc0;
+    height: 40px;
+    width: auto;
+}
