@@ -538,11 +538,11 @@ html, body {
 }
 
 #contact p {
-    font-size: 15px;
+    font-size: 16px;
 }
 
 #contact h5 {
-    color:gold;
+    color:#328cc0;
     font-size: 25px;
 }
 
@@ -592,43 +592,62 @@ html, body {
     width: 50px;
 }
 
+.location-details a:hover{
+    color:purple;
+}
+
+#submission-form h4{
+    align-items: center;
+}
+
 #contact-right {
     padding: 35px 35px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
     border-radius: 40px;
+    font-family: 'Raleway', sans-serif;
 }
 
-#contact-right form .form-control {
-    font-family: "Comic Neue", sans-serif;
-    padding: 12px;
-    font-size: 18px;
-    line-height: 24px;
+#contact-right h4{
+    font-weight: bold;
+    font-size: 25px;
 }
 
-#contact-right form textarea.form-control {
-    min-height: 164px;
+#contact-right p {
+    font-size: 16px;
 }
 
-
-.form-group {
-    position: relative; /* Needed to position the asterisk correctly */
+#contact-right a {
+    font-size: 20px;
+    font-style: italic;
 }
 
-.form-group.required::after {
-    content: "*";
-    color: red; 
-    position: absolute;
-    top: 50%;
-    right: -10px; 
-    transform: translateY(-37%);
-    font-size: 26px; 
+#contact-right a:hover{
+    color: purple;
 }
 
-.external-links {
-    margin-top: 30px;
-    font-size: 40px;
+#external-links {
+    margin-top:25px;
+    font-size: 30px;
+    list-style: none;
 }
 
+#external-links li {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+  
+#external-links li a i {
+    margin-right: 10px; 
+}
+  
+#external-links li:hover i {
+    color: purple; /* Change this to the font color of the icon you desire */
+}
+  
+#external-links li:hover a {
+    color: purple; /* Change this to the font color of the link text you desire */
+}
+  
 /*
         Footer
 */

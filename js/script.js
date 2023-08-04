@@ -107,4 +107,8 @@ document.addEventListener('DOMContentLoaded', function() {
 /*
     Code for the submission message form
 */
+function resetForm() {
+  document.getElementById("contactForm").reset();
+}
 
+var submitted = false;
