@@ -105,10 +105,44 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 /*
-    Code for the submission message form
+    Code for handling errors on files that cant be found
 */
-function resetForm() {
-  document.getElementById("contactForm").reset();
+
+/*
+function handleError() {
+  window.location.href = 'alternate-url'; // Replace 'alternate-url' with the desired URL
+}
+*/
+
+function checkFileExists(url, successCallback, errorCallback) {
+  var xhr = new XMLHttpRequest();
+  xhr.open('HEAD', url, true);
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4) {
+      if (xhr.status === 200) {
+        successCallback();
+      } else {
+        errorCallback();
+      }
+    }
+  };
+  xhr.send(null);
 }
 
-var submitted = false;
+document.addEventListener('DOMContentLoaded', function () {
+  var resumeLink = document.getElementById('resume-link');
+
+  resumeLink.addEventListener('click', function (event) {
+    event.preventDefault();
+
+    checkFileExists(resumeLink.href,
+      function () {
+        // Resume.pdf exists, open it in a new tab
+        window.open(resumeLink.href, '_blank');
+      },
+      function () {
+        // Resume.pdf not found, redirect to 404.html
+        window.location.href = '404.html';
+      });
+  });
+});
