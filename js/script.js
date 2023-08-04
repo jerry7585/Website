@@ -105,5 +105,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 /*
-    Code for the 
+    Code for the submission message form
 */
+

@@ -295,7 +295,7 @@ html, body {
 .about-item {
     background-color: #fff;
     padding: 50px 30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .about-item i {
@@ -485,7 +485,7 @@ html, body {
         Hobbies Section
 */
 #hobbies img {
-    margin: 60px 0;
+    margin: 65px 0;
 }
 
 #hobbies {
@@ -525,6 +525,108 @@ html, body {
 
 .hobby p {
     line-height: normal;
+}
+
+/*
+        Contacts Section
+*/
+#contact {
+    padding-top: 65px;
+    padding-bottom: 65px;
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+#contact p {
+    font-size: 15px;
+}
+
+#contact h5 {
+    color:gold;
+    font-size: 25px;
+}
+
+#contact-left p {
+    margin: 3px;
+}
+
+.vertical-heading h2 {
+    margin-top: 5px;
+}
+
+#contact-left {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-left p,
+#contact-left li {
+    margin-left: 0; /* Reset the default margin */
+    margin-bottom: 15px; /* Add a margin at the bottom of each element */
+}
+
+.location h4 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.location-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    padding: 0;
+}
+
+.location-details li {
+    font-family: "Open Sans", sans-serif;
+    margin-top: 12px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.location-details li i {
+    font-size: 25px;
+    margin-right: 10px;
+    width: 50px;
+}
+
+#contact-right {
+    padding: 35px 35px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 40px;
+}
+
+#contact-right form .form-control {
+    font-family: "Comic Neue", sans-serif;
+    padding: 12px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+#contact-right form textarea.form-control {
+    min-height: 164px;
+}
+
+
+.form-group {
+    position: relative; /* Needed to position the asterisk correctly */
+}
+
+.form-group.required::after {
+    content: "*";
+    color: red; 
+    position: absolute;
+    top: 50%;
+    right: -10px; 
+    transform: translateY(-37%);
+    font-size: 26px; 
+}
+
+.external-links {
+    margin-top: 30px;
+    font-size: 40px;
 }
 
 /*

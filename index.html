@@ -18,6 +18,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap" rel="stylesheet" >
+
 
         <!-- Link to animatecss-->
         <link rel="stylesheet" href="css\Animate\animate.min.css">
@@ -414,6 +416,106 @@
     <!-- End of hobbies section -->
 
 
+    <!-- Start of Contact Section -->
+    <section id="contact">
+        <div class="content-box-md">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-6">
+
+                        <!-- Contact Left-->
+                        <div id="contact-left">
+
+                            <div class="vertical-heading">
+                                <h5>Let's Connect</h5>
+                                <h2>Send Me A <strong>Message!</strong></h2>
+                            </div>
+                            <p>If you have any questions or comments, or any messages for me, please feel free to reach out using the area on the right or on one of my social media platforms below. I love hearing constructive criticism as well as helping in any way I can, so please don't hesitate!</p>
+
+                            <div id="information">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="location">
+                                            <h4>United States</h4>
+                                            <ul class="location-details">
+                                                <li><i class="fa-regular fa-envelope">  </i><span>jerrysu.nyc@gmail.com</span></li>
+                                                <li><i class="fa-solid fa-map-pin"></i> <span>New York City or Michigan</span></li>
+                                                <li><i class="fa-regular fa-file"></i>  <span><a href="Resume.pdf" target="_blank">View my resume</a></span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Left Contact Side -->
+                    
+                    
+                    <!-- Contact Right -->
+                    <div class="col-md-6">
+                        <div id="contact-right">
+                            <script>
+                                function submitForm() {
+                                    document.getElementById("contactForm").reset();
+
+                                    // Display Message if user submits a message
+                                    if (submitted) {
+                                        alert('Thank you so much for reaching out! I will reply as soon as I can. Have a great day! I do read all of these messages!');
+                                    }
+                                }
+                            </script>
+
+                            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="submitForm()"> </iframe>
+                            <form class="form" id="contactForm" action="https://docs.google.com/forms/d/e/1FAIpQLSeLd3yyR1Qji6DiKQR6a89um5Y-2DpMbn9xw47ojwXWqPYbWg/viewform?usp=sf_link" method="post" onsubmit="submitted=true" target="hidden_iframe">
+                                <h4>Send Message to Jerry</h4>
+                                <p>Got any feedback for me? Want me to review something? Got a question that I can help answer? Fill this out now! I will reach out as soon as possible. Areas marked with * are required to submit the form!</p>
+
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="form-group required">
+                                            <input name="entry.34671445" type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="form-group required">
+                                            <input name="entry.1063618809" type="email" class="form-control" id="email" placeholder="Email Address" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="form-group">
+                                            <input name="entry.805460585" type="number" class="form-control" id="phone" placeholder="Phone Number">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="form-group">
+                                            <input name="entry.752436160" type="text" class="form-control" id="subject" placeholder="Subject">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group required">
+                                    <textarea name="entry.130780041" class="form-control" id="message" placeholder="Message" required></textarea>
+                                </div>
+
+                                <div id="submit-btn">
+                                    <input class="btn btn-general btn-color" title="submit" value="Submit" type="submit">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- End of Right Contact Side -->
+
+                </div>
+                
+                <ul class="external-links">
+                    <li><a href="https://www.linkedin.com/in/jerrysunyc/" target="_blank"> <i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+                    <li><a href="https://github.com/jerry7585" target="_blank">  <i class="fa-brands fa-github"></i> GitHub</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </section>  
+    <!-- End of Contact Section -->
 
     <!-- Footer -->
     <footer class="text-center">
