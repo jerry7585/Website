@@ -474,16 +474,55 @@ html, body {
 
 .owl-stage {
     display: flex;
-    justify-content: center; /* Add this to center the icons within the carousel */
+    justify-content: center; 
 }
 
 .slider-navigation {
     margin-top: 20px;
 }
 
-/*
-        Hobbies Section
-*/
+/* ===================================== 
+            Quote I Live By
+======================================== */
+
+#quote {
+    background-image: url('images/quote/quote.png');
+    padding-top: 55px;
+    padding-bottom: 65px;
+    background-color: #747474;
+    font-family: 'Comic Neue', sans-serif;
+    z-index: 1;
+}
+
+#quote span {
+    font-style: italic;
+    font-weight: bold;
+}
+
+#quote p{
+    color:aliceblue;
+    font-size: 20px;
+}
+
+#tech-quote-1 {
+    color: gold;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+}
+
+#tech-quote-1 i{
+    color:red;
+}
+
+#quote h3,
+#quote h4{
+    color:white;
+    font-size: 20px;
+}
+
+/* ===================================== 
+            Hobbies Section
+======================================== */
 #hobbies img {
     margin: 65px 0;
 }
@@ -527,9 +566,9 @@ html, body {
     line-height: normal;
 }
 
-/*
-        Contacts Section
-*/
+/* ===================================== 
+            Contacts Section
+======================================== */
 #contact {
     padding-top: 65px;
     padding-bottom: 65px;
@@ -648,9 +687,9 @@ html, body {
     color: purple; /* Change this to the font color of the link text you desire */
 }
   
-/*
-        Footer
-*/
+/* ===================================== 
+            Footer
+======================================== */
 footer {
     background-color: rgb(88, 84, 84);
     color: white;
