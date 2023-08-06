@@ -28,6 +28,10 @@
         <!-- Link to Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
+        <!-- Link to lightbox css -->
+        <link rel="stylesheet" href="css/lightbox/lightbox.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
         <!-- Link to Font Awesome for Icons/Fonts-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <link rel="stylesheet" href="css\font-awesome\fontawesome.css">
@@ -337,8 +341,71 @@
 
 
 
-     <!-- Quote I live by -->
-     <section id="quote">
+
+    <!-- Start of Portfolio Project Section -->
+    <section id="portfolio">
+        <div class="content-box-md">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-12 wow flipInX" data-wow-duration="1s">
+                        <div class="vertical-heading">
+                            <h5>My <Strong>Amazing</Strong> Projects</h5>
+                            <h2>Each project is a <strong>unique</strong> piece of development to solidfy my <strong>grasp</strong> of a concept</h2>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 wow flipInX" data-wow-duration="1s">
+                        <!-- Portfolio Item Filters -->
+                        <div id="project-filter" >
+                            <button class="btn active" data-filter="*"><span>ALL</span></button>
+                            <button class="btn" data-filter=".back"><span>BACKEND</span></button>
+                            <button class="btn" data-filter=".web"><span>WEB DEV</span></button>
+                            <button class="btn" data-filter=".app"><span>APP DEV</span></button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <section id="portfolio-wrapper" class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                <div class="container-fluid">
+                    <div class="row no-gutters">
+                        <div id="project-container">
+
+                            <!-- Portfolio Item 01 -->
+                            <div class="col-md-4 col-sm-6">                               
+                                <div class="portfolio-item">
+                                    <a href="images/portfolio/portfolioGif.gif " data-lightbox="portfolio" data-title="Website-Portfolio" data-caption="This is an image of something amazing!">
+                                        <img src="images\portfolio\portfolioIcon.png" class="img-responsive" alt="Website-Portfolio">
+                                        <div class="portfolio-item-overlay">
+                                            <div class="portfolio-item-details text-center">
+                                                <h3>Website Portfolio</h3>
+                                                <span></span> 
+                                                <p class="portfolio-info-text">Web Design, Frontend, HTML, CSS, Javascript</p>
+                                                <p>This is my first web dev expereince, being able to create a website from nothing is a great way to showcase my mastery. I've used HTML/CSS/Javascript for the foundation of the website, then I included many libraries and frameworks like wowjs animations, jQuery, bootstrap, font-awesome, and more to showcase my ability and other projects.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    <!-- End of Portfolio Project Section -->
+    
+
+    <!-- Quote I live by -->
+    <section id="quote" class = "quote-section">
         <div class="content-box-lg">
             <div class="container">
                 <div class="row">
@@ -372,11 +439,6 @@
         </div>
     </section>
     <!-- End of Quote section -->
-
-
-
-    
-
 
     <!-- Start of hobbies section-->
     <section id="hobbies">
@@ -566,12 +628,21 @@
     <!-- Link to owl carousel JS file -->
     <script src="js/owl-carousel/owl.carousel.min.js"></script>
 
-    <!-- Link to bootstrap JS file-->
+    <!-- Link to bootstrap JS file -->
     <script src="js/Bootstrap/bootstrap.min.js"></script>
+
+    <!-- Link to Isotope JS file -->
+    <script src="js/isotope/isotope.pkgd.min.js"></script>
+
+    <!-- Link to lightbox JS file -->
+    <script src="js/lightbox/lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 
     <!-- Link to main JS script file -->
     <!-- keep this at the end so all other libraries are initialized first-->
     <script src="js/script.js"></script>
+
+    
 
 </body>
 

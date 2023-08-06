@@ -104,6 +104,67 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+// Lightbox initialization
+$(document).ready(function() {
+  $('[data-lightbox="portfolio"]').magnificPopup({
+    type: 'image',
+    gallery: {
+      enabled: true // Enable gallery mode for multiple images
+    }
+  });
+});
+
+$(document).ready(function() {
+  $('[data-lightbox="gallery"]').magnificPopup({
+    type: 'image',
+    gallery: {
+      enabled: true
+    }
+  });
+});
+
+/*
+    Code for the portfolio creating equal grid lines
+*/
+
+$(window).on('load', function() {
+  // Initialize isotope plugin
+  $("#project-container").isotope({
+
+  });
+
+  //filter items on button click
+  $("#project-filter").on('click', 'button', function() {
+
+      //get filter value
+      var filterValue = $(this).attr('data-filter');
+
+      //filter portfolio items
+      $("#project-container").isotope({
+          filter: filterValue
+      });
+
+      //active button
+      $("#project-filter").find('.active').removeClass('active');
+      $(this).addClass('active');
+
+  });
+});
+
+
+/* 
+              Magnifier
+*/
+$(function() {
+  $("#portfolio-wrapper").magnificPopup({
+      delegate: 'a', //child items selector, by clicking on it popup will open
+      type: 'image',
+      gallery: {
+          enabled: true // adds buttons to view all the images
+      }
+  });
+});
+
 /*
     Code for handling errors on files that cant be found
 */
