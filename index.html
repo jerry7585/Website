@@ -64,16 +64,18 @@
     </a>
 
      <!-- Main Menu list element all hyperlinks -->
-     <div class="menubar">
+    <div class="menubar">
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav pull-right">
-                <li><a class="smooth-scroll" href="#home-content">HOME</a></li>
-                <li><a class="smooth-scroll" href="#about">ABOUT</a></li>
-                <li><a class="smooth-scroll" href="#skills">SKILLS</a></li>
-                <li><a class="smooth-scroll" href="#portfolio">WORK</a></li>
-                <li><a class="smooth-scroll" href="#hobbies">HOBBIES</a></li>
-                <li><a class="smooth-scroll" href="#contact">CONTACT</a></li>
-                <li><a id="resume-link" href="JerrySu_Resume.pdf" target="_blank">RESUME</a></li>
+                <li><a class="smooth-scroll" href="#home-content"> <i class="fa-solid fa-house-user"></i> HOME</a></li>
+                <li><a class="smooth-scroll" href="#about"> <i class="fa-regular fa-address-card"></i> ABOUT</a></li>
+                <li><a class="smooth-scroll" href="#skills"> <i class="fa-solid fa-gears"></i> SKILLS</a></li>
+                <li><a class="smooth-scroll" href="#portfolio"> <i class="fa-solid fa-code"></i> WORK</a></li>
+                <li><a class="smooth-scroll" href="#hobbies"> <i class="fa-solid fa-music"></i> HOBBIES</a></li>
+                <li><a class="smooth-scroll" href="#contact"> <i class="fa-regular fa-envelope"></i> CONTACT</a></li>
+                <li><a id="resume-link" href="JerrySu_Resume.pdf" target="_blank"> <i class="fa-regular fa-file"></i> RESUME</a></li>
+                <li><a href="https://www.linkedin.com/in/jerrysunyc/" target="_blank"> <i class="fa-brands fa-linkedin"></i> LINKEDIN </a></li>
+                <li><a href="https://github.com/jerry7585" target="_blank">  <i class="fa-brands fa-github"></i> GITHUB</a></li>
             </ul>
         </div>
     </div>
@@ -369,13 +371,13 @@
 
             </div>
 
-            <section id="portfolio-wrapper">
+            <section id="portfolio-wrapper" class="wow bounceInUp" data-wow-duration="1s" data-wow-delay=".5s">
                 <div class="container-fluid">
                     <div class="row no-gutters">
                         <div id="project-container">
 
                             <!-- Portfolio Item 01 -->
-                            <div class="col-md-4 col-sm-6 front webdev wow bounceInRight" data-wow-duration="1s">                               
+                            <div class="col-md-3 front webdev" >                               
                                 <div class="portfolio-item">
                                     <a href="video/portfolio/portfolioGif.gif" data-lightbox="portfolio" data-title="Website-Portfolio">
                                         <img src="images\portfolio\portfolioIcon.png" class="img-responsive" alt="Website-Portfolio">
@@ -391,32 +393,51 @@
                                 </div>
                             </div>
                             
-                            <div class="col-md-4 col-sm-6 front webdev wow bounceInRight" data-wow-duration="1.33s">                               
+                            <!-- Portfolio Item 02 -->
+                            <div class="col-md-3 front backend appdev">                               
                                 <div class="portfolio-item">
-                                    <a href="video/portfolio/portfolioGif.gif" data-lightbox="portfolio" data-title="Website-Portfolio">
-                                        <img src="images\portfolio\portfolioIcon.png" class="img-responsive" alt="Website-Portfolio">
+                                    <a href="video/portfolio/seeclickfixapp.gif" data-lightbox="portfolio" data-title="Website-Portfolio">
+                                        <img src="images/portfolio/seeclickfixapp.png" class="img-responsive" alt="Website-Portfolio">
                                         <div class="portfolio-item-overlay">
                                             <div class="portfolio-item-details text-center">
-                                                <h3>Website Portfolio</h3>
+                                                <h3>Public Service Prediction App</h3>
                                                 <span></span> 
-                                                <p class="portfolio-info-text">Web Design, Frontend, HTML, CSS, Javascript</p>
-                                                <p>This is my first web dev expereince, being able to create a website from nothing is a great way to showcase my mastery. I've used HTML/CSS/Javascript for the foundation of the website, then I included many libraries and frameworks like wowjs animations, jQuery, bootstrap, font-awesome, and more to showcase my ability and other projects.</p>
+                                                <p class="portfolio-info-text">Backend, Java, API, Android Studio</p>
+                                                <p>An app developed in Java to leverage the data and conclusions gathered from Newark's open data to provide a prediction of how long a user has to wait for a service to be completed. This app takes into account social, cultural, area of issue, etc to give a reliable estimation.</p>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
                             </div>
 
-                            <div class="col-md-4 col-sm-6 front webdev wow bounceInRight" data-wow-duration="1.66s">                               
+                            <!-- Portfolio Item 03 -->
+                            <div class="col-md-3 front backend" >                               
                                 <div class="portfolio-item">
-                                    <a href="video/portfolio/portfolioGif.gif" data-lightbox="portfolio" data-title="Website-Portfolio">
-                                        <img src="images\portfolio\portfolioIcon.png" class="img-responsive" alt="Website-Portfolio">
+                                    <a href="video/portfolio/newarkData.gif" data-lightbox="portfolio" data-title="Website-Portfolio">
+                                        <img src="images/portfolio/newarkData.png" class="img-responsive" alt="Website-Portfolio">
                                         <div class="portfolio-item-overlay">
                                             <div class="portfolio-item-details text-center">
-                                                <h3>Website Portfolio</h3>
+                                                <h3>Newark Data Parser</h3>
                                                 <span></span> 
-                                                <p class="portfolio-info-text">Web Design, Frontend, HTML, CSS, Javascript</p>
-                                                <p>This is my first web dev expereince, being able to create a website from nothing is a great way to showcase my mastery. I've used HTML/CSS/Javascript for the foundation of the website, then I included many libraries and frameworks like wowjs animations, jQuery, bootstrap, font-awesome, and more to showcase my ability and other projects.</p>
+                                                <p class="portfolio-info-text">Backend, Java, API</p>
+                                                <p>A backend focused project which leverages Java's ability to retreive data online through excel sheets and API. Being able to parse through millions of lines of data very quickly to allow the user to draw conclusions that can be used for other programs.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Portfolio Item 04 -->
+                            <div class="col-md-3 front backend" >                               
+                                <div class="portfolio-item">
+                                    <a href="video/portfolio/libraryaccount.png" data-lightbox="portfolio" data-title="Website-Portfolio">
+                                        <img src="images/portfolio/libraryaccount.png" class="img-responsive" alt="Website-Portfolio">
+                                        <div class="portfolio-item-overlay">
+                                            <div class="portfolio-item-details text-center">
+                                                <h3>Library Account Manager</h3>
+                                                <span></span> 
+                                                <p class="portfolio-info-text">Backend, C++</p>
+                                                <p>One of my first big projects that was submitted as a final project for a class. It simulates an account keeper for students to register and input the textbooks they are borrowing for the semester. Included features such as admin, late fees, check out, check in, create/delete account, change password. Fun fact: It was actually used by the semester after mine to keep track of who borrowed the textbooks from the professor!</p>
                                             </div>
                                         </div>
                                     </a>
@@ -618,7 +639,6 @@
 
                 </div>
                 
-
             </div>
         </div>
     </section>  

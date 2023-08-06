@@ -69,6 +69,59 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+/*
+    Return navbar back to original after clicking home
+*/
+$(document).ready(function() {
+  // Click event handler for the home link
+  $('.home-link').on('click', function() {
+    // Remove the 'scrolled' class from other navbar links
+    $('.navbar-nav li a').removeClass('scrolled');
+    $('.navbar-nav li a').addClass('default-style');
+  });
+});
+
+/*
+    Show which section is active
+*/
+
+$(document).ready(function() {
+  $('.navbar-nav li a').on('click', function() {
+    $('.navbar-nav li a').removeClass('active-section');
+    $(this).addClass('active-section');
+  });
+});
+
+//Code is not working, ranges are not working correctly
+/*
+$(document).ready(function() {
+  $('.navbar-nav li a').on('click', function() {
+    $('.navbar-nav li a').removeClass('active-section');
+    $(this).addClass('active-section');
+  });
+
+  // Scroll event handler
+  $(window).on('scroll', function() {
+    // Get the current scroll position
+    var scrollPosition = $(this).scrollTop();
+
+    // Loop through each section 
+    $('section').each(function() {
+      var sectionTop = $(this).offset().top - 300; //the - number is the offset
+      var sectionBottom = sectionTop + $(this).outerHeight();
+
+      // update if detected within range
+      if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+        var targetId = $(this).attr('id');
+        $('.navbar-nav li a').removeClass('active-section');
+        $('.navbar-nav li a[href="#' + targetId + '"]').addClass('active-section');
+      }
+    });
+  });
+});
+*/
+
+
 
 /*
     Initialize the owl carousel

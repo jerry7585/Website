@@ -153,7 +153,7 @@ html, body {
     position:fixed;
     margin-top: 15px;
     margin-left: 90px; 
-    font-size: 24px; 
+    font-size: 20px; 
     font-weight: bold; 
     font-family: 'Raleway', sans-serif;
     color: white;
@@ -190,21 +190,22 @@ html, body {
     left: auto;
     background-color: transparent; 
     align-items: center;
-    padding: 5px;
+    padding: 0px;
     z-index: 300; 
 }
 
 .navbar-nav li {
-    margin-right: 10px;
+    margin-right: 5px;
     display: inline-block; 
 }
 
 .navbar-nav li a {
     color: white; 
-    font-size: 18px; 
+    font-size: 16px; 
     text-decoration: none; 
     font-family: 'Raleway', sans-serif;
     font-style: bold;
+    background-color: transparent;
 }
 
 .navbar-nav li a:hover{
@@ -253,7 +254,12 @@ html, body {
     transform: translate(-50%, -120%); 
     font-size: 26px; 
     color: gold;
-  }
+}
+
+.navbar-nav li a.active-section {
+    color: gold; 
+    background-color: transparent;
+}
 
 /* ===================================== 
             About Me Section 1
