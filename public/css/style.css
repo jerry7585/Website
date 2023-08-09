@@ -1,0 +1,892 @@
+/* ===================================== 
+                Html, Body
+======================================== */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===================================== 
+        Fading in and out Method
+======================================== */
+/* Animation for home-heading-1 and home-heading-2 */
+@keyframes fadeInHeading {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+/* Animation for home-text and learn more button */
+@keyframes fadeInPlace {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+@keyframes fadeInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform:translateX(0);
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* ===================================== 
+                Home Content
+======================================== */
+#home-heading-1, #home-heading-2, #home-text, #learn-more-btn, #arrow-down{
+    opacity: 0;
+    line-height: 1;
+}
+
+#home-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color:white;
+    font-size: 20px;
+}
+  
+#home-content-inner {
+    text-align: center;
+}
+
+#home-heading {
+    padding-bottom: 25px;
+}
+
+#home-heading-1 {
+    animation: fadeInHeading 1s ease-in-out 0.75s forwards;
+    font-weight: bold;
+    font-size: 60px;
+}
+  
+#home-heading-2 {
+    animation: fadeInFromLeft 1s ease-in-out 1.5s forwards; 
+    font-weight: bold;
+    font-size: 60px;
+}
+
+#arrow-down {
+    animation: fadeInFromLeft 1s ease-in-out 1.5s forwards; 
+}
+  
+#home-text {
+    animation: fadeInPlace 1s ease-in-out 2.25s forwards;
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+#home-heading-2 span {
+    font-style: italic;
+    font-weight: bold;
+    color:gold
+}
+
+#home-text span {
+    font-weight: bold;
+    font-style: italic;
+}
+
+#learn-more-btn a{
+    color:white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    animation: fadeInPlace 1s ease-in-out 3s forwards;
+}
+
+.learn-more-outline {
+    background-color: transparent; 
+    padding: 10px 40px; /* padding of button and border */
+    border: 2px solid white; 
+    display: inline-block; 
+    color: white; 
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    animation: fadeInPlace 1s ease-in-out 3s forwards;
+}
+
+#arrow-down {
+    color:#fff;
+}
+/* ===================================== 
+    Logo, Video Background, Menu Bar
+======================================== */
+.logo-container {
+    display: flex;
+    align-items: center; 
+}
+
+.logo {
+    position: fixed;
+    top: 10px; 
+    left: 20px; 
+    width: 50px; 
+    height: auto; 
+    z-index: 999; /*set high so it appears on top of other elements with less z -index*/
+}
+
+.logo-text {
+    position:fixed;
+    margin-top: 15px;
+    margin-left: 90px; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    z-index: 999;
+}
+
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* Scale the video to cover the entire viewport */
+    z-index: -1; /* Place the video behind other elements */
+}
+
+.bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; 
+    background-color: transparent; 
+    z-index: 200; 
+}
+
+/* ===================================== 
+            Menu Buttons On Top
+======================================== */
+.menubar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: auto;
+    background-color: transparent; 
+    align-items: center;
+    padding: 0px;
+    z-index: 300; 
+}
+
+.navbar-nav li {
+    margin-right: 5px;
+    display: inline-block; 
+}
+
+.navbar-nav li a {
+    color: white; 
+    font-size: 16px; 
+    text-decoration: none; 
+    font-family: 'Raleway', sans-serif;
+    font-style: bold;
+    background-color: transparent;
+}
+
+.navbar-nav li a:hover{
+    background-color: #212226;
+}
+
+.navbar-nav li a:hover::before{
+    content: "•"; 
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -120%); 
+    font-size: 26px; 
+    color: gold;
+}
+
+/* ===================================== 
+        Menu Buttons After Scroll
+======================================== */
+.scrolled-bar {
+    background-color: white;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2); /* Add a box shadow */
+}
+
+.navbar-nav.scrolled li a {
+    color: black;
+    font-style:bold;
+}
+
+.logo-text.scrolled {
+    color: black;
+}
+
+.navbar-nav.scrolled li a:hover{
+    background-color: gray;
+    color:white;
+}
+
+.navbar-nav.scrolled li a:hover::before {
+    content: "•"; 
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -120%); 
+    font-size: 26px; 
+    color: gold;
+}
+
+.navbar-nav li a.active-section {
+    color: gold; 
+    background-color: transparent;
+}
+
+/* ===================================== 
+            About Me Section 1
+======================================== */
+
+.about-section {
+    background-color: white; /* Replace this with your desired background color */
+    color: black;
+    padding: 50px;
+}
+
+#about-part-1-end {
+    padding: 50px;
+    justify-content: center;
+    display: flex;
+    align-items: center; 
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+.about-left {
+    display: flex;
+    align-items: center; /* Vertically center the .vertical-heading within .about-left */
+    animation: fadeInFromLeft 1s ease-in-out forwards;
+}
+
+.about-right {
+    font-family: 'Raleway', sans-serif;
+}
+
+.vertical-heading {
+    text-transform: uppercase; 
+    display: flex;
+    flex-direction: column; /* Arrange the h6 and h1 elements in a column */
+    align-items: center;
+}
+
+.vertical-heading h6{
+    text-transform: uppercase; 
+    font-size:25px;
+    color:gold
+}
+
+.vertical-heading h1 {
+    text-transform: uppercase; 
+    font-size:35px;
+}
+
+.vertical-heading h1 span{
+    text-transform: uppercase; 
+    font-size:35px;
+    font-weight: bold;
+}
+
+/* ===================================== 
+            About Me Section 2
+======================================== */
+
+.about-section-2 {
+    background-color: rgb(231, 234, 238);
+    color: black;
+    padding: 50px;
+}
+
+.about-item {
+    background-color: #fff;
+    padding: 50px 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-item i {
+    font-size: 35px;
+    margin: 0;
+}
+.about-item h3 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.about-item hr {
+    width: 150px;
+    height: 3px;
+    background-color: #328cc0;
+    margin-bottom: 30px;
+    border: none;
+}
+
+/* Hover State */
+.about-item:hover {
+    background-color: #328cc0;
+}
+
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover p{
+    color: #fff;
+}
+
+.about-item:hover hr {
+    background-color: #fff;
+}
+
+.about-item:hover i {
+    transform: translateY(-20px);
+}
+
+/* Icon fly up on hover */
+.about-item i {
+    transition: all 400ms ease-in-out;
+}
+
+/* ===================================== 
+            Skills section
+======================================== */
+#skills {
+    background-color: wheat;
+    padding: 50px 0;
+    text-align: center;
+}
+  
+#skills h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color:#328cc0;
+}
+
+#skills p {
+    font-size: 17px;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 30px;
+}
+
+#skills span {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.prev-btn,
+.next-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+  
+.prev-btn:hover,
+.next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+  
+.prev-btn {
+    margin-right: 15px;
+}
+  
+.next-btn {
+    margin-left: 15px;
+}
+  
+.icon-container {
+    display: flex; 
+    flex-wrap: wrap; 
+    align-items: center; 
+    font-family: 'Raleway', sans-serif;
+    overflow-x: auto;
+    padding-left: 1%; 
+    padding-right: 2.2%; 
+    width: 100%; /* Ensure the container spans the full width */
+}
+
+.icon {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon .label {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #328cc0;
+}
+
+.icon i {
+    font-size: 40px; /* Adjust the size of the icon */
+}
+
+.icon img {
+    width: 40px !important; 
+    height: auto !important; 
+}
+
+.skill h4 {
+    line-height: 40px;
+}
+
+.progress {
+    height: 25px;
+    border-radius: 0;
+    background: #efefef;
+    overflow: visible;
+}
+
+.progress-bar {
+    background-color: #328cc0;
+    position: relative;
+}
+
+.progress-bar span {
+    font-size: 15px;
+    font-family: "Ralewayu", sans-serif;
+    background: black;
+    padding: 5px;
+    position: absolute;
+    left: 97%;
+    top: -40px;
+}
+
+.progress-bar span:before {
+    content: "";
+    border-top: 8px solid #212226;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    position: absolute;
+    bottom: -7px;
+    left: 20%;
+}
+
+/* ===================================== 
+            Owl-Carousel
+======================================== */
+.owl-theme .owl-nav [class*=owl-] {
+    color: #212226;
+    font-size: 40px;
+    background: none;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: none;
+    color: #212226;
+}
+
+.owl-stage {
+    display: flex;
+    justify-content: center; 
+}
+
+.slider-navigation {
+    margin-top: 20px;
+}
+
+/* ===================================== 
+            Portfolio Section
+======================================== */
+#portfolio {
+    background-color: rgb(255, 255, 255);
+    padding-top:60px;
+    padding-bottom:150px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#portfolio .vertical-heading {
+    margin-bottom: 50px;
+}
+
+.row.no-gutters [class*=col-] {
+    padding: 0;
+}
+
+.vertical-heading h5 {
+    font-size: 40px;
+    color: #328cc0;
+}
+
+.vertical-heading h2 {
+    font-size: 20px;
+}
+
+#project-filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding: 20px 25px 20px 0;
+}
+
+#project-filter button {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: 550;
+    background: transparent;
+    box-shadow: none;
+    padding-right: 30px;
+    padding-left: 30px;
+    outline: 0;
+}
+
+#project-filter button span {
+    display: block;
+    padding-bottom: 5px;
+    -webkit-transition: border-color .4s ease-in-out;
+    transition: border-color .4s ease-in-out;
+}
+
+#project-filter button.active span {
+    color: red;
+    border-bottom: 4px solid red;
+}
+
+#project-filter {
+    margin-bottom: 10px;
+    padding: 20px 25px 20px 0;
+}
+
+/*
+        Portfolio Items
+*/
+.portfolio-item {
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolio-item-details {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.portfolio-item-details h3 {
+    color: #f4c613;
+    font-size: 30px;
+    transition: all 1s;
+}
+
+.portfolio-info-text{
+    color:gold !important; 
+    font-size: 20px !important;
+}
+
+.portfolio-item-details span {
+    display: inline-block;
+    border-top: 1px solid #fff;
+    padding-bottom: 10px;
+    height: 6px;
+    width: 150px;
+}
+
+.portfolio-item-details p {
+    font-size: 15px;
+    color: #fff;
+    transition: all 1s;
+}
+
+.portfolio-item-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(7, 7, 8, 0.9);
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.portfolio-item:hover .portfolio-item-overlay {
+    opacity: 1;
+}
+
+
+/* ===================================== 
+            Quote I Live By
+======================================== */
+
+#quote {
+    background-image: url('images/quote/quote2.png');
+    padding-top: 55px;
+    padding-bottom: 65px;
+    background-color: wheat;
+    font-family: 'Comic Neue', sans-serif;
+    z-index: 1;
+}
+
+#quote span {
+    font-style: italic;
+    font-weight: bold;
+}
+
+#quote p{
+    color:black;
+    font-size: 20px;
+}
+
+#tech-quote-1 {
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+}
+
+#tech-quote-1 i{
+    color:black;
+}
+
+#quote h3,
+#quote h4{
+    color:black;
+    font-size: 20px;
+}
+
+
+/* ===================================== 
+            Hobbies Section
+======================================== */
+#hobbies img {
+    margin: 65px 0;
+}
+
+#hobbies {
+    padding-top:60px;
+    background-color: rgb(231, 234, 238);
+    color:black;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 55px;
+}
+
+#hobbies h5 {
+    font-size: 25px;
+    color: #328cc0;
+    font-weight: bold;
+}
+
+#hobbies h2 {
+    padding-bottom:20px;
+}
+
+.hobby {
+    padding-bottom: 10px;
+}
+
+.hobby:hover .icon {
+    color: #328cc0;
+    -webkit-transition: all 400ms linear;
+    transition: all 400ms linear;
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+}
+
+.hobby h4 {
+    font-size: 20px;
+    font-weight:bold;
+}
+
+.hobby p {
+    line-height: normal;
+}
+
+.hobby h5 {
+    color:black;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.hobby h5:hover {
+    color:#328cc0;
+}
+
+/* ===================================== 
+            Contacts Section
+======================================== */
+#contact {
+    padding-top: 65px;
+    padding-bottom: 65px;
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+#contact p {
+    font-size: 16px;
+}
+
+#contact h5 {
+    color:#328cc0;
+    font-size: 25px;
+}
+
+#contact-left p {
+    margin: 3px;
+}
+
+.vertical-heading h2 {
+    margin-top: 5px;
+}
+
+#contact-left {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-left p,
+#contact-left li {
+    margin-left: 0; /* Reset the default margin */
+    margin-bottom: 15px; /* Add a margin at the bottom of each element */
+}
+
+.location h4 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.location-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    padding: 0;
+}
+
+.location-details li {
+    font-family: "Open Sans", sans-serif;
+    margin-top: 12px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.location-details li i {
+    font-size: 25px;
+    margin-right: 10px;
+    width: 50px;
+}
+
+.location-details a:hover{
+    color:purple;
+}
+
+#submission-form h4{
+    align-items: center;
+}
+
+#contact-right {
+    padding: 35px 35px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 40px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#contact-right h4{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#contact-right p {
+    font-size: 16px;
+}
+
+#contact-right a {
+    font-size: 20px;
+    font-style: italic;
+}
+
+#contact-right a:hover{
+    color: purple;
+}
+
+#external-links {
+    margin-top:25px;
+    font-size: 30px;
+    list-style: none;
+}
+
+#external-links li {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+  
+#external-links li a i {
+    margin-right: 10px; 
+}
+  
+#external-links li:hover i {
+    color: purple; /* Change this to the font color of the icon you desire */
+}
+  
+#external-links li:hover a {
+    color: purple; /* Change this to the font color of the link text you desire */
+}
+  
+/* ===================================== 
+            Footer
+======================================== */
+footer {
+    background-color: rgb(88, 84, 84);
+    color: white;
+    padding: 30px;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+
+footer span {
+    color:gold;
+    font-style: italic;
+}
+footer p {
+    margin-bottom: 0; 
+}
+
+footer span {
+    font-weight: bold;
+}
+
+#return-top.scrolled {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 999;
+    font-size: 22px;
+    color: white;
+    background-color: #328cc0;
+    height: 40px;
+    width: auto;
+}

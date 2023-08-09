@@ -1,0 +1,124 @@
+<!-- CSS ELEMENTS OF THIS 404HTML FILE IS INCLUDED WITHIN THIS HTML-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Important Meta Code, set for all websites -->  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Title of Browser-->
+    <title>Jerry Su</title>
+
+    <!-- Adding favicon to browser icon-->
+    <link rel="browser icon" href="images/favicon/favicon.ico">
+
+    <!-- Adding Roboto Mono as the font-->
+    <!-- Also adding Raleway as a font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- Link to Bootstrap JS (jQuery required) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Link to Animate.css from https://animate.style/-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- Link to Font Awesome for Icons/Fonts-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css\font-awesome\fontawesome.css">
+    
+</head>
+
+<body>
+    
+    <div class="img">
+
+        <div class="topleft">
+            <img src="images/logo/logo.png" alt="logo" style="width: 125px; height: 100px;" >
+        </div>
+
+        <div class="middle">
+            <a href="index.html">Return To Jerry's Website</a>
+        </div>
+
+    </div>
+
+    <!-- Link to main JS script file -->
+    <script src="js/script.js"></script>
+
+    <!-- Link to jquery JS file-->
+    <script src="js\jQuery\jquery.min.js"></script>
+
+    <!-- Link to wow.js JS file-->
+    <script src="js\wow\wow.min.js"></script>
+
+    <!-- Link to bootstrap JS file-->
+    <script src="js\Bootstrap\bootstrap.min.js"></script>
+    
+</body>
+
+</html>
+
+<!-- CSS ELEMENTS DONE IN FILE HERE INSTEAD OF CREATING A NEW CSS FILE-->
+<style>
+    body,
+    html {
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .img {
+        background-image: url('images/404page/404background1.jpg');
+        height: 100%;
+        background-size: cover;
+        position: relative;
+        color: #000;
+        font-size: 45px;
+    }
+
+    .topleft {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+    }
+
+    .middle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+        margin-top: 10%;
+    }
+
+    /* Add this CSS to remove margin from h1 element */
+    .middle h1 {
+        margin: 0;
+    }
+
+    a {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 140%);
+        color: white;
+        border-radius: 40px;
+        padding: 8px 25px;
+        transition: all 400ms linear;
+        font-weight: bold;
+    }
+
+    a:hover {
+        color: #fff;
+        background-color: #f4c613;
+    }
+
+</style>
