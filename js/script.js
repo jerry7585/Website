@@ -260,3 +260,21 @@ document.addEventListener('DOMContentLoaded', function () {
       });
   });
 });
+
+
+
+/*
+    Code for 2nd owl carousel for outside help
+    Might not be working, idea left behind use this function if you want to use it again in future
+*/
+$(document).ready(function() {
+  var owl = $("#services-carousel").owlCarousel({
+      items: 1
+  });
+
+  $("#outside-services li a").click(function(event) {
+      event.preventDefault();
+      var target = $(this).attr("href"); // Get target from href
+      owl.trigger('to.owl.carousel', [$(target), 300]);
+  });
+});
