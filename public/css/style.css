@@ -735,6 +735,88 @@ html, body {
     color:#328cc0;
 }
 
+
+/* ===================================== 
+        Outside Connection Section
+======================================== */
+#outside-help {
+    background-color: wheat;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 40px;
+}
+
+.content-box-md {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: transparent;
+}
+
+#outside-services li a{
+    font-size: 18px;
+    color: black;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+#outside-services li a:active {
+    color: rgb(77, 77, 207); 
+    text-decoration: underline; 
+}
+
+#outside-services ul {
+    margin-bottom: 40px;
+}
+
+#outside-services ul li {
+    padding: 5px 30px;
+}
+
+#outside-services ul li a {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    color: #212226;
+    text-transform: uppercase;
+}
+
+.services-box .col-md-6 {
+    padding: 0;
+}
+
+.services-box img {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 480px;
+    max-height: 480px;
+}
+
+.services-box .tab-bg {
+    background: #fff;
+    padding: 59px 30px;
+    min-height: 480px;
+    max-height: 480px;
+}
+
+.services-box h3 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.services-box p {
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+.service-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(245, 218, 63);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
 /* ===================================== 
             Contacts Section
 ======================================== */
