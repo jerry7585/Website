@@ -278,3 +278,12 @@ $(document).ready(function() {
       owl.trigger('to.owl.carousel', [$(target), 300]);
   });
 });
+
+
+windows.addEventListener("blur", () => {
+  document.title = "Come check me out :(";
+});
+
+windows.addEventListener("focus", () => {
+  document.title = "Jerry Su";
+});
